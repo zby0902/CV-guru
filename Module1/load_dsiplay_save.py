@@ -8,6 +8,7 @@ args = vars(ap.parse_args())
 print(args)
 
 image = cv2.imread(args["image"])
+print(image.shape,image.size,image.ndim)
 print("width: {} pixels".format(image.shape[1]))
 print("height: {} pixels".format(image.shape[0]))
 print("channel: {}".format(image.shape[2]))
